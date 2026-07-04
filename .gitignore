@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Obsidian local UI state (not shareable vault content)
+.obsidian/workspace*
+.obsidian/plugins/
+.obsidian/.trash/
+
+# Python (if tooling scripts are added later)
+.venv/
+__pycache__/
+*.pyc
+.env
