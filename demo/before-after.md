@@ -26,18 +26,20 @@ was leaning toward a 10% discount tied to a 2-year commit but hadn't decided...
 
 **User:** Hey, can you help me finish the pricing proposal for Acme?
 
-**Claude:** *[reads `CLAUDE.md`, `_index.md`, `04-entities/customers/acme-widgets-co.md`]*
+**Claude:** *[reads `CLAUDE.md`, `_index.md`,
+`01-projects/acme-widgets-pricing-proposal.md`, and the latest session
+log in `03-sessions/`]*
 
-Picking this up — Acme's mid-market, on Platform + Premium support, Sam
-Rivera is your primary contact. Per the customer note, the bulk-import gap
-came up again on the June 15 renewal call and you flagged it to product.
+Picking this up — the proposal's drafted: Platform + Premium support,
+10% discount tied to a 2-year commit (the reasoning's in the June 27
+decision note — the 2-year term buys runway on the bulk-import gap Sam
+keeps raising). Per the July 5 session log, you're blocked on legal's
+review of the commit clause, and your own next step was to chase them
+if nothing came back by July 10.
 
-For the pricing proposal itself — I don't see a project note or session
-log for it yet, so this looks like it's starting fresh. Want to base it on
-the standard mid-market tier, or is there a discount/commitment structure
-you were already leaning toward? If you mentioned one in an earlier
-conversation that wasn't logged, that's worth capturing in a project note
-now so it doesn't get lost again.
+So: has legal responded? If yes, the remaining steps are sending it to
+Sam and booking the walkthrough call — he prefers a short call over a
+long document. If not, today's job is the chase.
 
 ---
 
@@ -45,10 +47,14 @@ now so it doesn't get lost again.
 
 Nothing about Claude's underlying capability changed — the difference is
 entirely that relevant context was already loaded before the user had to
-ask for help. The second version also does something the first can't:
-it notices *what's missing* (no project note for the pricing proposal)
-and offers to fix that gap going forward, instead of just answering once
-and losing the thread again.
+ask for help. The second version knows the deal structure, *why* it was
+chosen, what's blocking, and even the contact's communication
+preference — none of which the user had to repeat.
+
+Just as important: when the vault *doesn't* have an answer, Claude says
+"not captured" and offers to start a note, instead of inventing
+something plausible (see the gap beat in `demo-script.md`, Demo 1).
+Memory you can't trust to admit gaps isn't memory.
 
 This is the whole value proposition of the pattern: not "Claude gets
 smarter," but "Claude stops starting from zero."

@@ -15,7 +15,9 @@ infrastructure spend over $50k.
 
 ## Notes
 - Prefers async written proposals over live pitch meetings.
-- Direct manager: reports to CTO.
+- Direct manager: reports to
+  [[04-entities/people/marcus-chen|Marcus Chen]] (CTO).
 
 ## Related
 - [[04-entities/teams/platform-engineering|Platform Engineering]]
+- [[01-projects/platform-migration-q3|Platform Migration Q3]]

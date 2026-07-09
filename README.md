@@ -4,33 +4,67 @@ A starter vault structure for giving Claude persistent memory across
 sessions, using Obsidian as the storage layer and the Obsidian MCP server
 as the connection to Claude.
 
-See `demo/before-after.md` for a concrete example of the problem this solves.
+See `demo/before-after.md` for a concrete example of the problem this
+solves, and `demo/demo-script.md` for four runnable demos. The vault
+ships pre-populated with a fictional company (Acme Corp and its
+customers) so the demos work out of the box — replace that world with
+your own as you go.
 
 ## What's in here
 
 ```
 CLAUDE.md              ← the ritual instructions Claude reads every session
 _index.md              ← map of content, read second every session
-00-inbox/               ← unsorted capture, triage manually
+_templates/             ← skeleton note for each content type
+00-inbox/               ← unsorted capture, triaged manually or via weekly review
 01-projects/            ← active project state (on-demand)
 02-context/
   communication-style.md  ← ALWAYS-LOAD standing instruction
-  (other)                  ← decisions, reusable patterns (on-demand)
+  decisions/               ← one note per durable decision, with the "why"
+  team-vault-conventions.md ← how the pattern works with multiple writers
+  weekly-review.md         ← the maintenance ritual that prevents rot
 03-sessions/            ← dated session logs (on-demand)
 04-entities/            ← people, teams, customers — structured frontmatter
 05-research/            ← topic-organized research notes
-demo/before-after.md    ← the flagship demo transcript
+99-archive/             ← done/parked projects, per the ritual in its README
+demo/
+  before-after.md       ← the flagship before/after transcript
+  demo-script.md        ← four runnable demos with exact prompts
 ```
+
+## Use cases
+
+The one pattern covers several distinct jobs — each is demoable (see
+`demo/demo-script.md`):
+
+1. **Session continuity** (flagship) — a new session picks up
+   mid-project without re-explaining anything.
+2. **Entity lookup + standing instructions** — facts about people,
+   teams, and customers load on demand, and instructions embedded in
+   them ("always flag security implications", "check open tickets
+   before upselling") fire without being asked.
+3. **Decision recall** — "why did we choose X?" answered from the
+   decision log, including the alternatives that were rejected.
+4. **Inbox triage** — quick captures get classified into the right
+   folder using the always-load/on-demand rule.
+5. **Session write-back** — Claude logs what happened and *why* at
+   session end; this is what makes it memory instead of notes.
+6. **Weekly review** — a maintenance ritual (stale notes, index drift,
+   archive proposals) that keeps the vault trustworthy over months.
 
 ## Setup
 
 1. **Install Obsidian** (free): https://obsidian.md
 2. **Open this folder as a vault** in Obsidian (Open folder as vault →
    select this repo).
-3. **Install the Obsidian MCP server** and connect it to Claude Desktop or
-   Claude.ai, following Obsidian's current MCP documentation. (This step
-   changes as tooling evolves — check Obsidian's docs for the current
-   setup flow rather than relying on a fixed guide here.)
+3. **Connect Claude — two paths:**
+   - *Claude Desktop / Claude.ai:* install the Obsidian MCP server and
+     connect it, following Obsidian's current MCP documentation. (This
+     step changes as tooling evolves — check Obsidian's docs for the
+     current setup flow rather than relying on a fixed guide here.)
+   - *Claude Code:* no MCP server needed — open a terminal in the vault
+     folder and start Claude Code; `CLAUDE.md` is picked up natively.
+     Obsidian remains your GUI for browsing and editing the same files.
 4. **Edit `02-context/communication-style.md`** to reflect how you actually
    want Claude to write to you — this is the one file worth customizing
    before you do anything else.

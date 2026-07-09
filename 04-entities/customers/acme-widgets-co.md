@@ -12,7 +12,8 @@ last-updated: 2026-07-02
 Mid-market account, on Platform license + Premium support tier since 2025.
 
 ## Points of Contact
-- Sam Rivera — Head of Ops, primary contact, decision-maker for renewals.
+- [[04-entities/people/sam-rivera|Sam Rivera]] — Head of Ops, primary
+  contact, decision-maker for renewals.
 
 ## Known Challenges
 - Struggling to onboard new team members onto the platform quickly.
@@ -28,4 +29,6 @@ Renewal call. Confirmed continued interest, raised the bulk-import gap
 again. Flagged to product team.
 
 ## Related
-- [[04-entities/people/|People directory]] (add contacts here as they're met)
+- [[04-entities/people/sam-rivera|Sam Rivera]] — primary contact
+- [[01-projects/acme-widgets-pricing-proposal|Pricing proposal project]]
+- [[04-entities/teams/product|Product]] — owns the bulk-import gap

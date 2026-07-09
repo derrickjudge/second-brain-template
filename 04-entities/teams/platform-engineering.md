@@ -24,3 +24,6 @@ service mesh other product teams build on.
 
 ## Members
 - [[04-entities/people/jane-doe|Jane Doe]] — Lead
+- [[04-entities/people/priya-patel|Priya Patel]] — Staff Engineer,
+  migration lead for [[01-projects/platform-migration-q3|Platform
+  Migration Q3]]
